@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>First Webpack Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Bookmark Test</title>
+
 </head>
 <body>
-  <div id="root"></div>
+    <h1>My Bookmark App</h1>
+    <div id="new-select">
+      <div id="new" id="clicknew">
+          <input type="button" id="newbk" value="Create a new bookmark">
+          <input type="button" id="oldbk" value="Get old bookmarks">
+      </div>
+  
+      <div class="select">
+          <label for="stars">View bookmarks by Star Rating:</label>
+              <select name="stars" id="stars">
+              <option value="one-star">1-star and up</option>
+              <option value="two-star">2-star and up</option>
+              <option value="three-star">3-star and up</option>
+              <option value="four-star">4-star and up</option>
+              <option value="five-star">5-star</option>
+          </select>
+      </div>
+    </div>
+  </head>
+  <body>
+      <div id="results">
+          <ul class="bookmarks">
+              <li class="previous">
+                  Bookmark 1
+              </li><br><br>
+              <li class="previous">
+                  Bookmark 2
+              </li><br><br>
+              <li class="previous">
+                  Bookmark 3
+              </li><br><br>
+          </ul>
+        </div>
+    <script type="module" src="scripts/index.js"></script>
+    <div id="root"></div>
 </body>
 </html>
